@@ -23,9 +23,9 @@ import (
 	"text/template"
 	"time"
 
-	"github.com/astaxie/beego/grace"
-	"github.com/astaxie/beego/toolbox"
-	"github.com/astaxie/beego/utils"
+	"github.com/prima101112/beego/grace"
+	"github.com/prima101112/beego/toolbox"
+	"github.com/prima101112/beego/utils"
 )
 
 // BeeAdminApp is the default adminApp used by admin module.

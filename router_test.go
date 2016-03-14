@@ -20,7 +20,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/astaxie/beego/context"
+	"github.com/prima101112/beego/context"
 )
 
 type TestController struct {
@@ -114,9 +114,9 @@ func TestUrlFor2(t *testing.T) {
 	handler.Add("/v1/:username/edit", &TestController{}, "get:GetURL")
 	handler.Add("/v1/:v(.+)_cms/ttt_:id(.+)_:page(.+).html", &TestController{}, "*:Param")
 	handler.Add("/:year:int/:month:int/:title/:entid", &TestController{})
-	if handler.URLFor("TestController.GetURL", ":username", "astaxie") != "/v1/astaxie/edit" {
+	if handler.URLFor("TestController.GetURL", ":username", "astaxie") != "/v1/prima101112/edit" {
 		Info(handler.URLFor("TestController.GetURL"))
-		t.Errorf("TestController.List must equal to /v1/astaxie/edit")
+		t.Errorf("TestController.List must equal to /v1/prima101112/edit")
 	}
 
 	if handler.URLFor("TestController.List", ":v", "za", ":id", "12", ":page", "123") !=
